@@ -30,7 +30,7 @@ public class WebViewFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_webview, container, false);
         WebView webview = view.findViewById(R.id.webView);
-        webview.getSettings().setJavaScriptEnabled(true);
+        webview.getSettings().getJavaScriptEnabled();
         webview.setWebViewClient(new WebViewClient());
         webview.loadUrl("http://www.ya.ru");
         webview.setOnKeyListener(new View.OnKeyListener() {
@@ -51,19 +51,7 @@ public class WebViewFragment extends Fragment {
             }
         });
 
-        final TextView textView = binding.text;
-        webViewViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
         return view;
     }
 
-    @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        binding = null;
-    }
 }

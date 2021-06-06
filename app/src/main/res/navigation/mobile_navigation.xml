@@ -37,4 +37,19 @@
         android:name="ru.mirea.galieva.mireaproject.ui.stories.StoriesFragment"
         android:label="@string/menu_stories"
         tools:layout="@layout/fragment_stories" />
+    <fragment
+        android:id="@+id/nav_sensors"
+        android:name="ru.mirea.galieva.mireaproject.ui.sensors.SensorsFragment"
+        android:label="@string/menu_sensors"
+        tools:layout="@layout/fragment_sensors" />
+    <fragment
+        android:id="@+id/nav_record"
+        android:name="ru.mirea.galieva.mireaproject.ui.record.RecordFragment"
+        android:label="@string/menu_record"
+        tools:layout="@layout/fragment_record" />
+    <fragment
+        android:id="@+id/nav_camera"
+        android:name="ru.mirea.galieva.mireaproject.ui.camera.CameraFragment"
+        android:label="@string/menu_camera"
+        tools:layout="@layout/fragment_camera" />
 </navigation>
