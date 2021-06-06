@@ -50,7 +50,7 @@ public class StoriesFragment extends Fragment {
         stories = new ArrayList<String>();
         recyclerView = root.findViewById(R.id.recyclerview);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-        stories.add("STORY 1");
+        stories.add("Write your story!");
         StoriesAdapter storiesAdapter = new StoriesAdapter(getActivity() ,stories);
         recyclerView.setAdapter(storiesAdapter);
 
